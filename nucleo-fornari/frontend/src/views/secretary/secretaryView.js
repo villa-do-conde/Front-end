@@ -1,10 +1,12 @@
 import React from 'react';
+import HelpRequestTable from './help-request-table/HelpRequestTable'
 
 function SecretaryPage() {
   return (
-    <div>
-      <h1>Bem-vindo, Secretaria!</h1>
-      {/* Adicione outros componentes ou funcionalidades específicas aqui */}
+    <div className='flex content-center items-center'>
+      <HelpRequestTable>
+
+      </HelpRequestTable>
     </div>
   );
 }
