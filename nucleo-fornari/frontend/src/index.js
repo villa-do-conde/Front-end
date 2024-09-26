@@ -6,10 +6,11 @@ import './index.css'
 // import ParentsPage from './views/parents/parentsView';
 // import SecretaryPage from './views/secretary/secretaryView'
 import SideMenu from './components/SideMenu/sideMenuView';
+import ParentsPage from './views/parents/parentsView';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <SideMenu></SideMenu>
+    <ParentsPage></ParentsPage>
   </React.StrictMode>
 );
