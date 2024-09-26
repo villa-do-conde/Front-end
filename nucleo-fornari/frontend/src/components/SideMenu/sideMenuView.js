@@ -16,7 +16,7 @@ const SideMenu = () => {
       ];
 
     return (
-        <div className={`h-screen bg-white-main  ${isExpanded ? 'w-64' : 'w-20'} transition-width duration-300 fixed left-0 top-0 flex flex-col items-center`}>
+        <div className={`h-screen bg-white-main  ${isExpanded ? 'w-64' : 'w-20'} transition-width duration-300 left-0 top-0 flex flex-col items-center`}>
 
             <div className="my-4 flex flex-col items-center">
                 <div className='flex flex-row'>

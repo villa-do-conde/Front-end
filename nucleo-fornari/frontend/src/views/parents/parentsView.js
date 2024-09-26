@@ -7,7 +7,6 @@ function ParentsPage() {
     <div className="parents-page">
       <SideMenu />
       <div className="main-content">
-        <h1>Bem-vindo, Responsável!</h1>
 
         <div className="header">
           <h1>Núcleo Fornari</h1>
