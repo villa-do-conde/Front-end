@@ -7,10 +7,11 @@ import './index.css'
 // import SecretaryPage from './views/secretary/secretaryView'
 import SideMenu from './components/SideMenu/sideMenuView';
 import ParentsPage from './views/parents/parentsView';
+import ParentsPageReuniao from './views/parents/parentsView';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ParentsPage></ParentsPage>
+    <ParentsPageReuniao></ParentsPageReuniao>
   </React.StrictMode>
 );
