@@ -1,13 +1,12 @@
-import React from 'react';
-import SideMenu from '../../components/SideMenu/sideMenuView';
-import './parentsView.css';
+import React from "react";
+import SideMenu from "../../components/SideMenu/sideMenuView";
+import "./parentsView.css";
 
 function ParentsPage() {
   return (
     <div className="parents-page">
       <SideMenu />
       <div className="main-content">
-
         <div className="header">
           <h1>Núcleo Fornari</h1>
           <div className="notifications">
@@ -19,12 +18,16 @@ function ParentsPage() {
         <div className="notice-board">
           <h2>Mural de Avisos</h2>
           <div className="notice">
-            <p><strong>Por Viviane Pereira - Terça-Feira, 3 de Setembro</strong></p>
+            <p>
+              <strong>Por Viviane Pereira - Terça-Feira, 3 de Setembro</strong>
+            </p>
             <h3>Encontro de Pais - 20/09</h3>
             <p>Sala G1A às 16:00</p>
           </div>
           <div className="notice">
-            <p><strong>Por Viviane Pereira - Terça-Feira, 1 de Setembro</strong></p>
+            <p>
+              <strong>Por Viviane Pereira - Terça-Feira, 1 de Setembro</strong>
+            </p>
             <h3>Feriado 7 Setembro - Atividades</h3>
             <p>Iremos realizar uma exposição de atividades dos alunos.</p>
           </div>
@@ -39,7 +42,6 @@ function ParentsPageReuniao() {
     <div className="parents-page">
       <SideMenu />
       <div className="main-content">
-
         <div className="header">
           <h1>Núcleo Fornari</h1>
           <div className="notifications">
@@ -53,12 +55,14 @@ function ParentsPageReuniao() {
           <div className="form">
             <label>Motivo da Solicitação</label>
             <select id="motivo" required>
-            <option value="" disabled selected>Selecione um motivo</option>
+              <option value="" disabled selected>
+                Selecione um motivo
+              </option>
               <option value="administrativo">Administrativo</option>
               <option value="documentacao">Documentação</option>
               <option value="denuncia">Denúncia</option>
             </select>
-            
+
             <label>Turno</label>
             <div className="turno">
               <input name="turno-radio" type="radio" value="manha" />
@@ -68,18 +72,74 @@ function ParentsPageReuniao() {
             </div>
 
             <label>Descrição</label>
-            <textarea id="descricao" name="descricao" rows="5" placeholder="Descreva o motivo da sua solicitação" required></textarea>
-            
-            <div className='botao'>
-            <button>Solicitar</button>
+            <textarea
+              id="descricao"
+              name="descricao"
+              rows="5"
+              placeholder="Descreva o motivo da sua solicitação"
+              required
+            ></textarea>
+
+            <div className="botao">
+              <button>Solicitar</button>
             </div>
-            
           </div>
         </div>
-
       </div>
     </div>
   );
 }
 
-export default ParentsPageReuniao;
+function ParentsPageAgenda() {
+  return (
+    <div className="parents-page">
+      <SideMenu />
+      <div className="main-content">
+        <div className="header">
+          <h1>Núcleo Fornari</h1>
+          <div className="notifications">
+            <i className="bell-icon">🔔</i>
+            <span className="notification-count">1</span>
+          </div>
+        </div>
+
+        <div className="notice-board">
+          <div className="topo">
+            <h1>Agenda de Enzo</h1>
+            <select name="mes" id="">
+              <option value="janeiro">Janeiro</option>
+              <option value="fevereiro">Fevereiro</option>
+              <option value="marco">Março</option>
+              <option value="abril">Abril</option>
+              <option value="maio">Maio</option>
+              <option value="junho">Junho</option>
+              <option value="julho">Julho</option>
+              <option value="agosto">Agosto</option>
+              <option value="setembro">Setembro</option>
+              <option value="outubro">Outubro</option>
+              <option value="novembro">Novembro</option>
+              <option value="dezembro">Dezembro</option>
+            </select>
+          </div>
+
+          <div className="notice">
+            <p>
+              <strong>Por Viviane Pereira - Terça-Feira, 3 de Setembro</strong>
+            </p>
+            <h3>Estava tossindo bastante.</h3>
+            <p>Sala G1A às 16:00</p>
+          </div>
+          <div className="notice">
+            <p>
+              <strong>Por Viviane Pereira - Terça-Feira, 1 de Setembro</strong>
+            </p>
+            <h3>Hoje o Enzo estava muito sonolento.</h3>
+            <p>Sala G1A às 15:27</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default ParentsPageAgenda;

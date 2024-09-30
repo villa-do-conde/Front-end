@@ -8,10 +8,11 @@ import './index.css'
 import SideMenu from './components/SideMenu/sideMenuView';
 import ParentsPage from './views/parents/parentsView';
 import ParentsPageReuniao from './views/parents/parentsView';
+import ParentsPageAgenda from './views/parents/parentsView';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ParentsPageReuniao></ParentsPageReuniao>
+    <ParentsPageAgenda></ParentsPageAgenda>
   </React.StrictMode>
 );
