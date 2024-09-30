@@ -21,14 +21,22 @@ module.exports = {
         dark: '#2a2041',
       },
       white: {
-        main: '#edebeb'
+        main: '#edebeb',
+        cinzabg: '#f2f0f0'
       },
       black: {
         main: '#141414'
       }     
     },
 
-    extend: {},
+    extend: {
+      width:{
+        '100': '100px',
+      },
+      height:{
+        '67': '67px'
+      }
+    },
   },
   plugins: [],
 }
