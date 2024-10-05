@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 function Header({ logoAzul }) {
     return (
         <header className="bg-white-cinzabg w-full h-20 text-lg">
@@ -18,9 +20,7 @@ function Header({ logoAzul }) {
                     Contato
                 </li>
                 <li>
-                    <button className="text-white-main bg-blue-main py-1 px-8 rounded-2xl font-normal justify-self-end">
-                        Login
-                    </button>
+                    <Button text="Login"/>
                 </li>
             </ul>
         </header>
