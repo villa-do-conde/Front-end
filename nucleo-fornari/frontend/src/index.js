@@ -13,6 +13,6 @@ import ParentsPageAgenda from './views/parents/parentsView';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ParentsPageAgenda></ParentsPageAgenda>
+    <ParentsPageReuniao></ParentsPageReuniao>
   </React.StrictMode>
 );

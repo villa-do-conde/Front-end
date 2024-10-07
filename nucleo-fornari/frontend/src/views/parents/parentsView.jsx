@@ -24,36 +24,33 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
+import Logo from "./logo-branco.png"
 
 function ParentsPage() {
   return (
-    <div className="parents-page">
+    <div className="flex">
       <SideMenu />
-      <div className="main-content">
-        <div className="header">
-          <h1>Núcleo Fornari</h1>
-          <Badge badgeContent={4} color="primary">
-            <MailIcon color="action" />
-          </Badge>
-        </div>
+      <div className="w-full">
+        <header className="flex h-10 bg-blue-main justify-center items-center px-8 py-5 border-">
+          <img src={Logo} className="h-67 w-100"></img>
+          <div className="notifications">
+            <i className="bell-icon">🔔</i>
+            <span className="notification-count">1</span>
+          </div>
+        </header>
 
-        <div className="notice-board">
-          <h2>Mural de Avisos</h2>
-          <div className="notice">
-            <p>
+        <div className="flex items-center flex-col h-full bg-white px-20 py-4  ">
+          <h2 className="py-8 text-5xl">Mural de Avisos</h2>
+          <div className="bg-blue-pastel p-10 mb-3 rounded-lg w-4/5" >
+            <p className="text-2xl">
               <strong>Por Viviane Pereira - Terça-Feira, 3 de Setembro</strong>
             </p>
-            <h3>Encontro de Pais - 20/09</h3>
+            <h3 className="text-2xl">Encontro de Pais - 20/09</h3>
             <p>Sala G1A às 16:00</p>
           </div>
-          <div className="notice">
-            <p>
-              <strong>Por Viviane Pereira - Terça-Feira, 1 de Setembro</strong>
-            </p>
-            <h3>Feriado 7 Setembro - Atividades</h3>
-            <p>Iremos realizar uma exposição de atividades dos alunos.</p>
-          </div>
+
         </div>
+        
       </div>
     </div>
   );
