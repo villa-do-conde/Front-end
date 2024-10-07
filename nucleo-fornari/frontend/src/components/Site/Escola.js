@@ -5,7 +5,7 @@ function Escola() {
 
     return (
 
-        <section className="w-full flex items-center justify-evenly p-16">
+        <section className="w-full flex items-center justify-evenly p-16 bg-blue-pastel">
 
             <section className='size-2/5'>
                 <h1 className='text-5xl py-6 text-blue-dark'>
@@ -16,7 +16,10 @@ function Escola() {
                     Sed in consectetur justo, id vulputate dolor. Proin dignissim odio ut quam fringilla, nec tristique elit gravida
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Sed in consectetur justo, id vulputate dolor. Proin dignissim odio ut quam fringilla, nec tristique elit gravida
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed in consectetur justo, id vulputate dolor. Proin dignissim
+                    odio ut quam fringilla, nec tristique elit gravida
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed in consectetur justo, id vulputate dolor. Proin dignissim odio ut quam fringilla, nec tristique elit gravida
                     Sed in consectetur justo, id vulputate dolor. Proin dignissim odio ut quam fringilla, nec tristique elit gravida
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Sed in consectetur justo, id vulputate dolor. Proin dignissim odio ut quam fringilla, nec tristique elit gravida
