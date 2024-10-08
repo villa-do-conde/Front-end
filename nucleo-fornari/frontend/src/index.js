@@ -12,20 +12,36 @@ import ParentsPageAgenda from './views/parents/parentsView';
 import Header from './components/Dashboards/Header';
 import Avisos from './components/Dashboards/Avisos';
 import Agenda from './components/Dashboards/Agenda';
+import LoginPage from './routes/loginPage';
+import Titulo from './components/Dashboards/Titulo';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode> 
-  {/* <SideMenu></SideMenu> position: fixed; 
+    
+    <main className='flex'>
 
-*/ }
 
-  <Header/>
-  <Agenda nomeAluno="Jules"/>
-  <Avisos titulo="titulo teste"
-   conteudo="assunto agenda"
-   autor="Pedro Artur"
-   dataCriacao= "29/03/2005"/>
+    <aside >
+
+    <SideMenu/>
+
+    </aside>
+
+    <section className='flex flex-col w-full'>
+
+    <Header/>
+    <Titulo/>
+    <Avisos titulo="Reunião de pais dia 23/11 "
+    conteudo="Trazer papel e caneta"
+    autor="neymar junior"
+    dataCriacao="2010"/>
+
+    </section>
+    
+    </main>
+   
+  
   
   </React.StrictMode>
 );
