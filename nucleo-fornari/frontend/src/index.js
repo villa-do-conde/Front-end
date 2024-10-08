@@ -11,17 +11,21 @@ import ParentsPageReuniao from './views/parents/parentsView';
 import ParentsPageAgenda from './views/parents/parentsView';
 import Header from './components/Dashboards/Header';
 import Avisos from './components/Dashboards/Avisos';
+import Agenda from './components/Dashboards/Agenda';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-  
+  <React.StrictMode> 
+  {/* <SideMenu></SideMenu> position: fixed; 
+
+*/ }
+
   <Header/>
- 
+  <Agenda nomeAluno="Jules"/>
   <Avisos titulo="titulo teste"
-  conteudo="Teste testes testes testes"
-  autor="Felipe Villa do Conde"
-  dataCriacao="7 de Setembro de 2001"/>
+   conteudo="assunto agenda"
+   autor="Pedro Artur"
+   dataCriacao= "29/03/2005"/>
   
   </React.StrictMode>
 );

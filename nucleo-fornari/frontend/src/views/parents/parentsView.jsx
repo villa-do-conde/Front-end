@@ -26,27 +26,6 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import Logo from "./logo-branco.png"
 
-function ParentsPage() {
-  return (
-    <div className="flex">
-      <div className="  ">
-
-        <div className="flex items-center flex-col h-full bg-white px-20 py-4  ">
-          <h2 className="py-8 text-5xl">Mural de Avisos</h2>
-          <div className="bg-blue-pastel p-10 mb-3 rounded-lg w-4/5" >
-            <p className="text-2xl">
-              <strong>Por Viviane Pereira - Terça-Feira, 3 de Setembro</strong>
-            </p>
-            <h3 className="text-2xl">Encontro de Pais - 20/09</h3>
-            <p>Sala G1A às 16:00</p>
-          </div>
-
-        </div>
-        
-      </div>
-    </div>
-  );
-}
 
 function ParentsPageReuniao() {
   const style = {
@@ -225,57 +204,6 @@ function ParentsPageReuniao() {
           </Modal>
         </div>
 
-      </div>
-    </div>
-  );
-}
-
-function ParentsPageAgenda() {
-  return (
-    <div className="parents-page">
-      <SideMenu />
-      <div className="main-content">
-        <div className="header">
-          <h1>Núcleo Fornari</h1>
-          <Badge badgeContent={4} color="primary">
-            <MailIcon color="action" />
-          </Badge>
-        </div>
-
-        <div className="notice-board">
-          <div className="topo">
-            <h1>Agenda de Enzo</h1>
-            <select name="mes" id="">
-              <option value="janeiro">Janeiro</option>
-              <option value="fevereiro">Fevereiro</option>
-              <option value="marco">Março</option>
-              <option value="abril">Abril</option>
-              <option value="maio">Maio</option>
-              <option value="junho">Junho</option>
-              <option value="julho">Julho</option>
-              <option value="agosto">Agosto</option>
-              <option value="setembro">Setembro</option>
-              <option value="outubro">Outubro</option>
-              <option value="novembro">Novembro</option>
-              <option value="dezembro">Dezembro</option>
-            </select>
-          </div>
-
-          <div className="notice">
-            <p>
-              <strong>Por Viviane Pereira - Terça-Feira, 3 de Setembro</strong>
-            </p>
-            <h3>Estava tossindo bastante.</h3>
-            <p>Sala G1A às 16:00</p>
-          </div>
-          <div className="notice">
-            <p>
-              <strong>Por Viviane Pereira - Terça-Feira, 1 de Setembro</strong>
-            </p>
-            <h3>Hoje o Enzo estava muito sonolento.</h3>
-            <p>Sala G1A às 15:27</p>
-          </div>
-        </div>
       </div>
     </div>
   );
