@@ -1,53 +1,118 @@
-.parents-page {
-    display: flex;
-    height: 100vh;
-  }
+
+.header {
   
-  .main-content {
-    flex: 1;
-    padding: 20px;
-    background-color: #f9f9f9;
-  }
-  
-  .notice-board {
-    padding: 20px;
-    background-color: #fff;
-  }
-  
-  .notice {
-    background-color: #e0e0e0;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .notifications {
-    position: relative;
-    
-  }
-  
-  .bell-icon {
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  .notification-count {
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    background-color: red;
-    color: white;
-    border-radius: 50%;
-    padding: 2px 6px;
-    font-size: 12px;
-  }
-  
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.notifications {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.bell-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.notification-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+}
+/* Tela de Reunião */
+
+.reuniao{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+}
+.reuniao h1{
+  font-size: 50px;
+}
+.reuniao .form{
+display: flex;
+flex-direction: column;
+align-items: center;
+border-radius: 30px;
+margin-top: 50px;
+width: 50%;
+background-color: #ccc;
+height: 600px;
+padding: 50px;
+}
+.form label{
+font-size: 30px;
+margin-top: 30px;
+}
+.form select{
+width: 300px;
+padding: 5px;
+border-radius: 10px;
+}
+.form .turno{
+display: flex;
+gap: 10px;
+}
+.form textarea{
+width: 300px;
+padding: 10px;
+resize: none;
+border-radius: 10px;
+}
+.form .botao{
+display: flex;
+width: 100%;
+justify-content: end;
+margin-top: 100px;
+}
+.form .botao button{
+width: 150px;
+color: white;
+font-weight: bold;
+font-size: 20px;
+padding: 5px;
+border-radius: 10px;
+background-color: black;
+transition: color 0.3s ease;
+}
+.botao button:hover{
+color: rgb(0, 132, 255);
+}
+
+/* Tela de Agenda */
+.topo{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding: 20px;
+}
+.topo h1{
+font-size: 20px;
+}
+.topo select{
+font-size: 20px;
+border: 1px solid black;
+cursor: pointer; 
+padding: 5px;
+border-radius: 10px;
+}
+.topo select:hover{
+background-color: #ccc;
+}
+
+.header {
+background-color: #82aae5;
+
+}

@@ -6,6 +6,13 @@ import './index.css'
 import SecretaryPage from './views/secretary/SecretaryView'
 import SideMenu from './components/SideMenu/sideMenuView';
 import ParentsPage from './views/parents/parentsView';
+import ParentsPageReuniao from './views/parents/parentsView';
+import ParentsPageAgenda from './views/parents/parentsView';
+import Header from './components/Dashboards/Header';
+import Avisos from './components/Dashboards/Avisos';
+import Agenda from './components/Dashboards/Agenda';
+import LoginPage from './routes/loginPage';
+import Titulo from './components/Dashboards/Titulo';
 
 
 
@@ -85,16 +92,16 @@ const cargo = sessionStorage.getItem("cargo");
 
 if (cargo && sideMenuItens[cargo] && pages[cargo]) {
   root.render(
-    <div className='flex'>
-      <div>
+    <main className='flex'>
+      <aside >
       <SideMenu menuItens={sideMenuItens[cargo]} />
 
-      </div>
-      <div className='w-full'>
+      </aside>
+      <section className='flex flex-col w-full'>
       {pages[cargo]}
 
-      </div>
-    </div>      
+      </section>
+    </main>      
     
   );
 }

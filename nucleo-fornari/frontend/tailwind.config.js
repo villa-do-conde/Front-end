@@ -19,16 +19,25 @@ module.exports = {
         main: '#7d2afa',
         pastel: '#c7a8e7',
         dark: '#2a2041',
+       claro: '#e6d4f9'
       },
       white: {
-        main: '#edebeb'
+        main: '#edebeb',
+        gray: '#f2f0f0'
       },
       black: {
         main: '#141414'
       }     
     },
-
-    extend: {},
+    extend: {
+      height: {
+        '10':'10%',
+        '67':'67px'
+      },
+      width:{
+        '100' : '100px'
+      }
+    },
   },
   plugins: [],
 }
