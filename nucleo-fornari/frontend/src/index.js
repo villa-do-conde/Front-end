@@ -85,10 +85,17 @@ const cargo = sessionStorage.getItem("cargo");
 
 if (cargo && sideMenuItens[cargo] && pages[cargo]) {
   root.render(
-    <React.StrictMode>
+    <div className='flex'>
+      <div>
       <SideMenu menuItens={sideMenuItens[cargo]} />
+
+      </div>
+      <div className='w-full'>
       {pages[cargo]}
-    </React.StrictMode>
+
+      </div>
+    </div>      
+    
   );
 }
 
