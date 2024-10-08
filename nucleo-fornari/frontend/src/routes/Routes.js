@@ -10,7 +10,7 @@ function Routes() {
     <Router>
       <Switch>
         <Route path="/login" component={LoginPage} />
-        <PrivateRoute path="/professor" component={ProfessorPage} />
+        <PrivateRoute path="/professor/" component={ProfessorPage} />
         <PrivateRoute path="/secretaria" component={SecretariaPage} />
         <PrivateRoute path="/responsaveis" component={ResponsaveisPage} />
         <Redirect from="/" to="/login" />
