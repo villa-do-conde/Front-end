@@ -13,12 +13,14 @@ import Header from './components/Dashboards/Header';
 import Avisos from './components/Dashboards/Avisos';
 import Agenda from './components/Dashboards/Agenda';
 import LoginPage from './routes/loginPage';
+import Titulo from './components/Dashboards/Titulo';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode> 
     
     <main className='flex'>
+
 
     <aside >
 
@@ -29,7 +31,11 @@ root.render(
     <section className='flex flex-col w-full'>
 
     <Header/>
-    <Avisos/>
+    <Titulo/>
+    <Avisos titulo="Reunião de pais dia 23/11 "
+    conteudo="Trazer papel e caneta"
+    autor="neymar junior"
+    dataCriacao="2010"/>
 
     </section>
     

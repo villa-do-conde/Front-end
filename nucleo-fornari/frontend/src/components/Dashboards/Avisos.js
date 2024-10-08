@@ -9,7 +9,7 @@ function Avisos(props) {
 
                 <p className="text-2xl py-5"> {props.conteudo} </p>
 
-                <h3 className="italic font-semibold">{props.autor}</h3>
+                <h3 className="italic font-semibold">Por {props.autor},</h3>
                 <p className="italic">{props.dataCriacao}</p>
 
             </div>
