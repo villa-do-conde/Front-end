@@ -29,15 +29,7 @@ import Logo from "./logo-branco.png"
 function ParentsPage() {
   return (
     <div className="flex">
-      <SideMenu />
-      <div className="w-full">
-        <header className="flex h-10 bg-blue-main justify-center items-center px-8 py-5 border-">
-          <img src={Logo} className="h-67 w-100"></img>
-          <div className="notifications">
-            <i className="bell-icon">🔔</i>
-            <span className="notification-count">1</span>
-          </div>
-        </header>
+      <div className="  ">
 
         <div className="flex items-center flex-col h-full bg-white px-20 py-4  ">
           <h2 className="py-8 text-5xl">Mural de Avisos</h2>
