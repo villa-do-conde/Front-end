@@ -5,7 +5,6 @@ import './parentsView.css';
 function ParentsPage() {
   return (
     <div className="parents-page">
-      <SideMenu />
       <div className="main-content">
 
         <div className="header">

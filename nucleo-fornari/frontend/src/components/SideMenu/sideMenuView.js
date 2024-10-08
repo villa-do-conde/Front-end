@@ -33,16 +33,16 @@ const SideMenu = ({menuItens}) => {
 
             <div className="mt-10 flex-grow flex flex-col justify-center items-center w-full">
                 {menuItens.map((item, index) => (
-                    <Link
-                    key={index}
-                    to={routes.find(route => route.path === item.route)}
-                    className="w-full"
-                    >
-                        <button className="flex items-center w-full px-4 py-3 my-2 text-white hover:text-blue-main">
+                    // <Link
+                    // key={index}
+                    // to={routes.find(route => route.path === item.route)}
+                    // className="w-full"
+                    // >
+                        <button key={index} className="flex items-center w-full px-4 py-3 my-2 text-white hover:text-blue-main">
                             {item.icon}
                             {isExpanded && <span className="ml-4 text-lg">{item.name}</span>}
                         </button>
-                    </Link>
+                    // </Link> 
                 ))}
             </div>
 
