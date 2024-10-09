@@ -37,4 +37,4 @@ function Routes() {
   );
 }
 
-export default routes;
+export default Routes;
